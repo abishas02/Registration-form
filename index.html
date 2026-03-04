@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="glass-card">
+        <h2>Create Account</h2>
+        <form id="registrationForm">
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" id="name" placeholder="Rosy Doe">
+                <span class="error" id="nameError">Name is required</span>
+            </div>
+
+            <div class="input-group">
+                <label>Email Address</label>
+                <input type="email" id="email" placeholder="example@mail.com">
+                <span class="error" id="emailError">Enter a valid email</span>
+            </div>
+
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Min. 6 characters">
+                <span class="error" id="passwordError">Must be at least 6 characters</span>
+            </div>
+
+            <button type="submit" id="submitBtn" disabled>Submit</button>
+        </form>
+    </div>  
+    <div id="customAlert" class="modal-overlay">
+    <div class="modal-content">
+        <p>Form submitted successfully! 🎉</p>
+        <button onclick="closeAlert()">OK</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
